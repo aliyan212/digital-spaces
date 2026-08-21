@@ -1,45 +1,124 @@
-.aesthetic-grid ul{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))!important;gap:20px!important;list-style:none!important;padding:0!important}.aesthetic-grid ul li img{aspect-ratio:1/1!important;object-fit:contain!important;width:80px!important;height:80px!important;background-color:transparent!important;margin-bottom:15px!important}.aesthetic-grid ul li{position:relative!important;display:flex!important;flex-direction:column!important;align-items:center!important;text-align:center!important;padding:20px!important;border-radius:16px!important;border-top:1px solid rgba(255,255,255,.4)!important;border-left:1px solid rgba(255,255,255,.2)!important;border-bottom:1px solid rgba(255,255,255,.05)!important;border-right:1px solid rgba(255,255,255,.05)!important;background-color:rgba(166,177,225,.08)!important;backdrop-filter:blur(12px)!important;-webkit-backdrop-filter:blur(12px)!important;box-shadow:inset 0 0 20px rgba(255,255,255,.05)!important;margin:0!important;transition:transform .4s cubic-bezier(.2, .8, .2, 1),box-shadow .4s ease!important;z-index:1!important}.aesthetic-grid ul li:hover{transform:translateY(-8px) scale(1.02)!important;box-shadow:0 15px 30px rgba(0,0,0,.15)!important}.aesthetic-grid ul li a{display:inline-block!important;margin-top:15px!important;padding:6px 18px!important;background-color:var(--background-modifier-hover)!important;color:var(--text-normal)!important;border-radius:20px!important;text-decoration:none!important;font-size:.85em!important;font-weight:600!important;transition:all .3s ease!important}.aesthetic-grid ul li a:hover{background-color:rgba(255,255,255,.25)!important;color:#fff!important;transform:translateY(-2px)!important}.aesthetic-grid .cm-formatting-list,.aesthetic-grid .list-bullet,.aesthetic-grid ul li::marker{display:none!important;content:""!important;font-size:0!important;color:transparent!important}.aesthetic-grid ul li strong{font-family:Quicksand,Nunito,'Arial Rounded MT Bold',sans-serif!important;font-size:1.15em!important;letter-spacing:1px!important;text-transform:uppercase!important;color:var(--text-normal)!important}.aesthetic-grid ul li{color:var(--text-muted)!important;font-size:.9em!important}@keyframes scroll-reveal{0%{opacity:0;transform:translateY(50px) scale(.95)}100%{opacity:1;transform:translateY(0) scale(1)}}.aesthetic-grid ul li{animation:scroll-reveal linear both!important;animation-timeline:view()!important;animation-range:entry 5% cover 25%!important}@keyframes slide-in-up{0%{opacity:0;translate:0 30px}100%{opacity:1;translate:0 0}}@keyframes scroll-reveal{0%{opacity:0;translate:0 50px;scale:0.95}100%{opacity:1;translate:0 0;scale:1}}.aesthetic-grid ul li img{transition:transform .4s cubic-bezier(.2, .8, .2, 1)!important}.aesthetic-grid ul li:hover img{transform:scale(1.15) rotate(-6deg)!important}.aesthetic-grid ul li a:active{transform:translateY(2px) scale(.95)!important;background-color:rgba(255,255,255,.4)!important;transition:all .1s ease!important}.aesthetic-grid ul li ::selection{background-color:rgba(166,177,225,.4)!important;color:#fff!important} /* 16. Custom Ambient Frosted Background */
-.aesthetic-grid .view-content,
-.aesthetic-grid .markdown-rendered,
-body:has(.aesthetic-grid) {
-    background:
-        radial-gradient(at 15% 15%, rgba(166, 177, 225, 0.25) 0px, transparent 50%),
-        radial-gradient(at 85% 20%, rgba(222, 186, 206, 0.2) 0px, transparent 50%),
-        radial-gradient(at 50% 80%, rgba(134, 182, 246, 0.2) 0px, transparent 50%),
-        radial-gradient(at 10% 90%, rgba(198, 207, 245, 0.15) 0px, transparent 50%),
-        var(--background-primary) !important;
-    background-attachment: fixed !important;
-    background-size: cover !important;
-}
-
-/* Add a subtle ambient backlight glow behind the entire card grid */
+/* Card Grid Layout */
 .aesthetic-grid ul {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+    gap: 20px !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 1.5rem 0 !important;
     position: relative !important;
     z-index: 1 !important;
+    width: 100% !important;
 }
 
+/* Background Backlight Glow */
 .aesthetic-grid ul::before {
     content: "" !important;
     position: absolute !important;
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
-    width: 90% !important;
-    height: 90% !important;
+    width: 95% !important;
+    height: 95% !important;
     background: radial-gradient(circle, rgba(166, 177, 225, 0.12) 0%, transparent 70%) !important;
     filter: blur(40px) !important;
     pointer-events: none !important;
     z-index: -1 !important;
 }
 
-/* Hide standard Obsidian chrome in exported HTML */
-.sidebar, .nav-header, .clickable-icon, .status-bar, .file-tree {
-    display: none !important;
+/* Individual Card Styling */
+.aesthetic-grid ul li {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 24px 20px !important;
+    border-radius: 16px !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-left: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
+    background-color: rgba(166, 177, 225, 0.08) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.03), 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+    margin: 0 !important;
+    color: var(--text-muted) !important;
+    font-size: 0.95em !important;
+    transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s ease !important;
+    z-index: 1 !important;
 }
 
-/* Center the main dashboard container */
-.markdown-rendered, .view-content, main {
-    max-width: 1000px !important;
-    margin: 0 auto !important;
-    padding: 40px 20px !important;
+.aesthetic-grid ul li:hover {
+    transform: translateY(-6px) scale(1.01) !important;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.05), 0 16px 32px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Card Icons */
+.aesthetic-grid ul li img {
+    aspect-ratio: 1/1 !important;
+    object-fit: contain !important;
+    width: 64px !important;
+    height: 64px !important;
+    background-color: transparent !important;
+    margin-bottom: 14px !important;
+    transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+}
+
+.aesthetic-grid ul li:hover img {
+    transform: scale(1.1) rotate(-4deg) !important;
+}
+
+/* Card Button Links */
+.aesthetic-grid ul li a {
+    display: inline-block !important;
+    margin-top: 14px !important;
+    padding: 6px 18px !important;
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    color: var(--text-normal) !important;
+    border-radius: 20px !important;
+    text-decoration: none !important;
+    font-size: 0.85em !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease !important;
+}
+
+.aesthetic-grid ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.22) !important;
+    border-color: rgba(255, 255, 255, 0.35) !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+}
+
+.aesthetic-grid ul li a:active {
+    transform: translateY(1px) scale(0.97) !important;
+}
+
+/* Card Typography */
+.aesthetic-grid ul li strong {
+    font-size: 1.1em !important;
+    letter-spacing: 0.5px !important;
+    color: var(--text-normal) !important;
+}
+
+.aesthetic-grid .cm-formatting-list,
+.aesthetic-grid .list-bullet,
+.aesthetic-grid ul li::marker {
+    display: none !important;
+    content: "" !important;
+}
+
+/* Ambient Background */
+body:has(.aesthetic-grid),
+.aesthetic-grid {
+    background:
+        radial-gradient(at 15% 15%, rgba(166, 177, 225, 0.15) 0px, transparent 50%),
+        radial-gradient(at 85% 20%, rgba(222, 186, 206, 0.12) 0px, transparent 50%),
+        radial-gradient(at 50% 80%, rgba(134, 182, 246, 0.12) 0px, transparent 50%),
+        radial-gradient(at 10% 90%, rgba(198, 207, 245, 0.1) 0px, transparent 50%),
+        var(--background-primary) !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
 }

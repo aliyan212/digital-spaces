@@ -21,14 +21,6 @@
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="rss.xml">
 
-    <!-- Obsidian Core Scripts -->
-    <script async id="webpage-script" src="scripts/webpage.js"
-        onload="this.onload=null;this.setAttribute('loaded', 'true')"></script>
-    <script async id="graph-wasm-script" src="scripts/graph-wasm.js"
-        onload="this.onload=null;this.setAttribute('loaded', 'true')"></script>
-    <script async id="graph-render-worker-script" src="scripts/graph-render-worker.js"
-        onload="this.onload=null;this.setAttribute('loaded', 'true')"></script>
-
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/snippets.css">
     <link rel="stylesheet" href="styles/obsidian.css">
@@ -40,186 +32,58 @@
     <style>
         :root {
             background-color: #202124;
-            --line-width: 40em;
-            --line-width-adaptive: 40em;
-            --file-line-width: 40em;
-            --sidebar-width: min(20em, 80vw);
-            --collapse-arrow-size: 11px;
-            --tree-vertical-spacing: 1.3em;
-            --sidebar-margin: 12px;
+            --max-page-width: 1400px;
         }
 
-        body {
-            transition: background-color var(--color-fade-speed) ease-in-out;
-        }
-
-        .sidebar {
-            height: 100%;
-            font-size: 14px;
-            z-index: 10;
-            min-width: calc(var(--sidebar-width) + var(--divider-width-hover));
-            max-width: calc(var(--sidebar-width) + var(--divider-width-hover));
-            position: relative;
-            overflow: clip;
-            transition: min-width 0.2s ease-in-out, max-width 0.2s ease-in-out;
-            contain: size;
-        }
-
-        #left-sidebar {
-            left: 0;
-        }
-
-        #right-sidebar {
-            right: 0;
-        }
-
-        .sidebar.is-collapsed {
-            min-width: 0;
-            max-width: 0;
-        }
-
-        .sidebar.floating {
-            position: absolute;
-        }
-
-        .sidebar .leaf-content {
-            height: 100%;
-            min-width: calc(var(--sidebar-width) - var(--divider-width-hover));
-            top: 0;
-            padding: var(--sidebar-margin);
-            padding-top: 4em;
-            line-height: var(--line-height-tight);
-            background-color: var(--background-secondary);
-            transition: background-color var(--color-fade-speed) ease-in-out;
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .sidebar:not(.is-collapsed) .leaf-content {
-            min-width: calc(max(100%, var(--sidebar-width)) - 3px);
-            max-width: calc(max(100%, var(--sidebar-width)) - 3px);
-        }
-
-        #left-sidebar-content {
-            border-top-right-radius: var(--radius-l);
-            border-bottom-right-radius: var(--radius-l);
-        }
-
-        #right-sidebar-content {
-            border-top-left-radius: var(--radius-l);
-            border-bottom-left-radius: var(--radius-l);
-        }
-
-        .sidebar-topbar {
-            height: calc(2.3em + 2 * var(--sidebar-margin));
-            width: var(--sidebar-width);
-            padding: var(--sidebar-margin);
-            z-index: 1;
-            position: fixed;
-            display: flex;
-            align-items: center;
-            transition: width ease-in-out;
-        }
-
-        .sidebar.is-collapsed .sidebar-topbar {
-            width: calc(2.3em + var(--sidebar-margin) * 2);
-        }
-
-        .sidebar .sidebar-topbar.is-collapsed {
-            width: 0;
-        }
-
-        .clickable-icon.sidebar-collapse-icon {
-            background-color: transparent;
-            color: var(--icon-color-focused);
-            padding: 2px !important;
-            margin: 0 !important;
-            height: 100% !important;
-            width: 2.3em !important;
-            position: absolute;
-        }
-
-        #left-sidebar .clickable-icon.sidebar-collapse-icon {
-            transform: rotateY(180deg);
-            right: var(--sidebar-margin);
-        }
-
-        #right-sidebar .clickable-icon.sidebar-collapse-icon {
-            transform: rotateY(180deg);
-            left: var(--sidebar-margin);
-        }
-
-        #navbar:not(:empty) {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0.5em 1em;
-            width: 100%;
-        }
-
-        #main {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            width: 100%;
-            align-items: stretch;
-            justify-content: center;
-        }
-
-        #main-horizontal {
-            display: flex;
-            flex-direction: row;
-            flex-grow: 1;
-            width: 100%;
-            align-items: stretch;
-        }
-
-        #center-content {
-            flex-basis: 100%;
-            max-width: 100%;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        #center-content>.obsidian-document {
-            padding-left: 2em;
-            padding-right: 1em;
-            width: 100%;
-            overflow-x: hidden !important;
+        html, body {
+            min-height: 100vh;
+            height: auto !important;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
             overflow-y: auto !important;
-            display: flex !important;
-            flex-direction: column !important;
-            align-items: center !important;
+            background-color: #202124;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #e6edf3;
         }
 
-        body #center-content>.obsidian-document>.markdown-preview-sizer {
-            padding-bottom: 40vh;
+        /* Container that stretches across screen */
+        .hub-container {
             width: 100%;
-            max-width: var(--line-width);
-            flex-basis: var(--line-width);
-        }
-
-        /* Centered Header / Title Styling */
-        .markdown-preview-sizer .header {
-            width: 100%;
+            max-width: var(--max-page-width);
+            margin: 0 auto;
+            padding: 3rem 2rem 5rem 2rem;
+            box-sizing: border-box;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            text-align: center;
-            margin: 2rem 0 2.5rem 0 !important;
         }
 
-        .markdown-preview-sizer .header h1.page-title {
-            font-size: 2.4rem !important;
-            font-weight: 800 !important;
-            text-align: center !important;
-            margin: 0 !important;
+        .hub-header {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .hub-header h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin: 0;
             letter-spacing: -0.02em;
+        }
+
+        .section-block {
+            width: 100%;
+            margin-bottom: 2.5rem;
+        }
+
+        .section-block h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
         .link-icon {
@@ -230,309 +94,135 @@
             margin-right: 6px;
         }
 
+        /* Source Pill */
         .source-footer {
             display: flex;
             justify-content: center;
+            width: 100%;
             margin-top: 3rem;
             padding-bottom: 2rem;
-            position: relative;
-            z-index: 10;
         }
 
         .source-pill {
             display: inline-flex;
             align-items: center;
             gap: 0.55rem;
-            padding: 0.8rem 1.15rem;
+            padding: 0.8rem 1.3rem;
             border-radius: 999px;
             background: rgba(255, 255, 255, 0.08);
             border: 1px solid rgba(255, 255, 255, 0.16);
-            color: var(--text-normal);
+            color: #e6edf3;
             text-decoration: none;
             font-weight: 600;
-            letter-spacing: 0.01em;
             backdrop-filter: blur(14px);
             -webkit-backdrop-filter: blur(14px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-            transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease, border-color 180ms ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.2s ease-in-out;
             cursor: pointer;
         }
 
         .source-pill:hover {
             transform: translateY(-2px);
-            background: rgba(255, 255, 255, 0.12);
-            border-color: rgba(255, 255, 255, 0.24);
-            box-shadow: 0 16px 34px rgba(0, 0, 0, 0.16);
-        }
-
-        .source-pill:focus-visible {
-            outline: 2px solid var(--interactive-accent);
-            outline-offset: 3px;
-        }
-
-        .source-pill-icon {
-            font-size: 1em;
-            line-height: 1;
+            background: rgba(255, 255, 255, 0.14);
+            border-color: rgba(255, 255, 255, 0.3);
+            color: #ffffff;
         }
     </style>
-
-    <script defer>
-        async function loadIncludes() {
-            let elements = document.querySelectorAll("link[itemprop='include']");
-            for (const el of elements) {
-                let href = el.getAttribute("href");
-                try {
-                    let text = "";
-                    if (href.startsWith("http") || location.protocol !== "file:") {
-                        const res = await fetch(href);
-                        if (!res.ok) continue;
-                        text = await res.text();
-                    }
-                    let fragment = document.createRange().createContextualFragment(text);
-                    el.before(fragment);
-                    el.remove();
-                } catch (e) {
-                    el?.remove();
-                }
-            }
-        }
-        document.addEventListener("DOMContentLoaded", loadIncludes);
-    </script>
 </head>
 
-<body class="publish css-settings-manager is-hidden-frameless show-inline-title is-floating-nav show-ribbon is-focused">
-    <script defer>
-        let theme = localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-        document.body.classList.add(theme === "dark" ? "theme-dark" : "theme-light");
-        document.body.classList.remove(theme === "dark" ? "theme-light" : "theme-dark");
-        if (window.innerWidth < 768) document.body.classList.add("is-phone");
-    </script>
+<body class="aesthetic-grid theme-dark">
 
-    <div class="parsed-feature-container" style="display: contents;">
-        <link itemprop="include" href="html/custom-head-content-content.html">
-    </div>
+    <main class="hub-container">
 
-    <div id="main">
-        <div id="navbar"></div>
-        <div id="main-horizontal">
-            <!-- Left Sidebar -->
-            <div id="left-content" class="leaf" style="--sidebar-width: var(--sidebar-width-left);">
-                <div id="left-sidebar" class="sidebar">
-                    <div class="sidebar-handle"></div>
-                    <div class="sidebar-topbar">
-                        <div class="topbar-content">
-                            <div id="search-container">
-                                <div id="search-wrapper">
-                                    <input enterkeyhint="search" type="search" spellcheck="false"
-                                        placeholder="Search...">
-                                    <div aria-label="Clear search" id="search-clear-button"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clickable-icon sidebar-collapse-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
-                                stroke-linejoin="round" class="svg-icon">
-                                <path
-                                    d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z">
-                                </path>
-                                <path d="M10 4V20"></path>
-                                <path d="M4 7H7"></path>
-                                <path d="M4 10H7"></path>
-                                <path d="M4 13H7"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="sidebar-content-wrapper">
-                        <div id="left-sidebar-content" class="leaf-content">
-                            <link itemprop="include" href="html/file-tree-content.html">
-                        </div>
-                    </div>
-                    <script defer>
-                        let ls = document.querySelector("#left-sidebar");
-                        ls.classList.toggle("is-collapsed", window.innerWidth < 768);
-                    </script>
-                </div>
-            </div>
+        <!-- Top Header -->
+        <header class="hub-header">
+            <h1>My Digital Spaces</h1>
+        </header>
 
-            <!-- Center Content -->
-            <div id="center-content" class="leaf">
-                <div class="obsidian-document markdown-preview-view markdown-rendered is-readable-line-width show-properties aesthetic-grid"
-                    data-type="markdown">
-                    <div class="markdown-preview-sizer markdown-preview-section">
+        <!-- Socials -->
+        <section class="section-block">
+            <h2>🌸 Socials &amp; Inspo</h2>
+            <ul>
+                <li>
+                    <img class="link-icon"
+                        src="https://www.google.com/s2/favicons?domain=instagram.com&sz=256"
+                        alt="Instagram">
+                    <strong>Instagram</strong> — @thestranger0708<br>
+                    <a href="https://www.instagram.com/thestranger0708/" target="_blank" rel="noopener noreferrer">Open Profile</a>
+                </li>
+                <li>
+                    <img class="link-icon"
+                        src="https://www.google.com/s2/favicons?domain=pinterest.com&sz=256"
+                        alt="Pinterest">
+                    <strong>Pinterest</strong> — @alieon22<br>
+                    <a href="https://pin.it/7tGkRDRK7" target="_blank" rel="noopener noreferrer">Open Profile</a>
+                </li>
+                <li>
+                    <img class="link-icon"
+                        src="https://www.google.com/s2/favicons?domain=reddit.com&sz=256" alt="Reddit">
+                    <strong>Reddit</strong> — u/Loose-Video-5850<br>
+                    <a href="https://www.reddit.com/user/Loose-Video-5850/" target="_blank" rel="noopener noreferrer">Open Profile</a>
+                </li>
+            </ul>
+        </section>
 
-                        <!-- Top Center Title Header -->
-                        <div class="header">
-                            <h1 class="page-title heading inline-title" id="My_Digital_Spaces_0">My Digital Spaces</h1>
-                        </div>
+        <!-- Media Logs -->
+        <section class="section-block">
+            <h2>🍵 Media Logs</h2>
+            <ul>
+                <li>
+                    <img class="link-icon"
+                        src="https://www.google.com/s2/favicons?domain=letterboxd.com&sz=256"
+                        alt="Letterboxd">
+                    <strong>Letterboxd</strong> — @alieon22<br>
+                    <a href="https://letterboxd.com/alieon22/" target="_blank" rel="noopener noreferrer">My Films</a>
+                </li>
+                <li>
+                    <img class="link-icon"
+                        src="https://www.google.com/s2/favicons?domain=app.thestorygraph.com&sz=256"
+                        alt="StoryGraph">
+                    <strong>Storygraph</strong> — @alieon22<br>
+                    <a href="https://app.thestorygraph.com/profile/alieon22" target="_blank" rel="noopener noreferrer">My Books</a>
+                </li>
+                <li>
+                    <img class="link-icon"
+                        src="https://www.google.com/s2/favicons?domain=backloggd.com&sz=256"
+                        alt="Backloggd">
+                    <strong>Backloggd</strong> — @alieon22<br>
+                    <a href="https://backloggd.com/u/alieon22/" target="_blank" rel="noopener noreferrer">My Games</a>
+                </li>
+            </ul>
+        </section>
 
-                        <!-- Socials -->
-                        <div class="el-h2">
-                            <h2 class="heading" id="socials">🌸 Socials &amp; Inspo</h2>
-                        </div>
-                        <div class="el-ul">
-                            <ul class="has-list-bullet">
-                                <li>
-                                    <img class="link-icon"
-                                        src="https://www.google.com/s2/favicons?domain=instagram.com&sz=256"
-                                        alt="Instagram">
-                                    <strong>Instagram</strong> — @thestranger0708<br>
-                                    <a class="external-link" href="https://www.instagram.com/thestranger0708/"
-                                        target="_blank" rel="noopener noreferrer">Open Profile</a>
-                                </li>
-                                <li>
-                                    <img class="link-icon"
-                                        src="https://www.google.com/s2/favicons?domain=pinterest.com&sz=256"
-                                        alt="Pinterest">
-                                    <strong>Pinterest</strong> — @alieon22<br>
-                                    <a class="external-link" href="https://pin.it/7tGkRDRK7" target="_blank"
-                                        rel="noopener noreferrer">Open Profile</a>
-                                </li>
-                                <li>
-                                    <img class="link-icon"
-                                        src="https://www.google.com/s2/favicons?domain=reddit.com&sz=256" alt="Reddit">
-                                    <strong>Reddit</strong> — u/Loose-Video-5850<br>
-                                    <a class="external-link" href="https://www.reddit.com/user/Loose-Video-5850/"
-                                        target="_blank" rel="noopener noreferrer">Open Profile</a>
-                                </li>
-                            </ul>
-                        </div>
+        <!-- Music -->
+        <section class="section-block">
+            <h2>🎧 Music</h2>
+            <ul>
+                <li>
+                    <img class="link-icon" src="https://cdn.simpleicons.org/lastdotfm/e31b23" alt="Last.fm">
+                    <strong>Last.fm</strong> — @alieon22<br>
+                    <a href="https://www.last.fm/user/alieon22" target="_blank" rel="noopener noreferrer">My Scrobbles</a>
+                </li>
+                <li>
+                    <img class="link-icon" src="https://cdn.simpleicons.org/spotify/1db954" alt="Spotify">
+                    <strong>Spotify</strong> — @aliyanadil2345<br>
+                    <a href="https://open.spotify.com/user/31mc2aehkez4okhpozh33v6qz3by" target="_blank" rel="noopener noreferrer">My Profile</a>
+                </li>
+            </ul>
+        </section>
 
-                        <!-- Media Logs -->
-                        <div class="el-h2">
-                            <h2 class="heading" id="media-logs">🍵 Media Logs</h2>
-                        </div>
-                        <div class="el-ul">
-                            <ul class="has-list-bullet">
-                                <li>
-                                    <img class="link-icon"
-                                        src="https://www.google.com/s2/favicons?domain=letterboxd.com&sz=256"
-                                        alt="Letterboxd">
-                                    <strong>Letterboxd</strong> — @alieon22<br>
-                                    <a class="external-link" href="https://letterboxd.com/alieon22/" target="_blank"
-                                        rel="noopener noreferrer">My Films</a>
-                                </li>
-                                <li>
-                                    <img class="link-icon"
-                                        src="https://www.google.com/s2/favicons?domain=app.thestorygraph.com&sz=256"
-                                        alt="StoryGraph">
-                                    <strong>Storygraph</strong> — @alieon22<br>
-                                    <a class="external-link" href="https://app.thestorygraph.com/profile/alieon22"
-                                        target="_blank" rel="noopener noreferrer">My Books</a>
-                                </li>
-                                <li>
-                                    <img class="link-icon"
-                                        src="https://www.google.com/s2/favicons?domain=backloggd.com&sz=256"
-                                        alt="Backloggd">
-                                    <strong>Backloggd</strong> — @alieon22<br>
-                                    <a class="external-link" href="https://backloggd.com/u/alieon22/" target="_blank"
-                                        rel="noopener noreferrer">My Games</a>
-                                </li>
-                            </ul>
-                        </div>
+        <!-- View Source Pill -->
+        <footer class="source-footer">
+            <a class="source-pill"
+               href="https://github.com/aliyan212/digital-spaces"
+               target="_blank"
+               rel="noopener noreferrer">
+                <span aria-hidden="true">⌘</span>
+                <span>View source code</span>
+            </a>
+        </footer>
 
-                        <!-- Music -->
-                        <div class="el-h2">
-                            <h2 class="heading" id="music">🎧 Music</h2>
-                        </div>
-                        <div class="el-ul">
-                            <ul class="has-list-bullet">
-                                <li>
-                                    <img class="link-icon" src="https://cdn.simpleicons.org/lastdotfm/e31b23"
-                                        alt="Last.fm">
-                                    <strong>Last.fm</strong> — @alieon22<br>
-                                    <a class="external-link" href="https://www.last.fm/user/alieon22" target="_blank"
-                                        rel="noopener noreferrer">My Scrobbles</a>
-                                </li>
-                            </ul>
-                        </div>
+    </main>
 
-                        <div class="el-ul">
-                            <ul class="has-list-bullet">
-                                <li>
-                                    <img class="link-icon" src="https://cdn.simpleicons.org/spotify/1db954"
-                                        alt="Spotify">
-                                    <strong>Spotify</strong> — @aliyanadil2345<br>
-                                    <a class="external-link"
-                                        href="https://open.spotify.com/user/31mc2aehkez4okhpozh33v6qz3by"
-                                        target="_blank" rel="noopener noreferrer">My Profile</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <footer class="source-footer">
-                            <a class="source-pill external-link"
-                               id="view-source-pill"
-                               href="https://github.com/aliyan212/digital-spaces"
-                               target="_blank"
-                               rel="noopener noreferrer"
-                               onclick="event.stopPropagation(); window.open('https://github.com/aliyan212/digital-spaces', '_blank'); return false;">
-                                <span class="source-pill-icon" aria-hidden="true">⌘</span>
-                                <span>View source code</span>
-                            </a>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right Sidebar -->
-            <div id="right-content" class="leaf" style="--sidebar-width: var(--sidebar-width-right);">
-                <div id="right-sidebar" class="sidebar">
-                    <div class="sidebar-handle"></div>
-                    <div class="sidebar-topbar">
-                        <div class="topbar-content">
-                            <label class="theme-toggle-container" for="theme-toggle-input">
-                                <input class="theme-toggle-input" type="checkbox" id="theme-toggle-input">
-                                <div class="toggle-background"></div>
-                            </label>
-                        </div>
-                        <div class="clickable-icon sidebar-collapse-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
-                                stroke-linejoin="round" class="svg-icon">
-                                <path
-                                    d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z">
-                                </path>
-                                <path d="M10 4V20"></path>
-                                <path d="M4 7H7"></path>
-                                <path d="M4 10H7"></path>
-                                <path d="M4 13H7"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="sidebar-content-wrapper">
-                        <div id="right-sidebar-content" class="leaf-content">
-                            <div id="outline" class="tree-container">
-                                <div class="feature-header">
-                                    <div class="feature-title">Table Of Contents</div>
-                                </div>
-                                <div class="tree-item" data-depth="1">
-                                    <div class="tree-item-children">
-                                        <div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable"
-                                                href="#socials">
-                                                <div class="tree-item-inner">🌸 Socials &amp; Inspo</div>
-                                            </a></div>
-                                        <div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable"
-                                                href="#media-logs">
-                                                <div class="tree-item-inner">🍵 Media Logs</div>
-                                            </a></div>
-                                        <div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable"
-                                                href="#music">
-                                                <div class="tree-item-inner">🎧 Music</div>
-                                            </a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <script defer>
-                        let rs = document.querySelector("#right-sidebar");
-                        rs.classList.toggle("is-collapsed", window.innerWidth < 768);
-                    </script>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
-
 </html>
