@@ -235,6 +235,8 @@
             justify-content: center;
             margin-top: 3rem;
             padding-bottom: 2rem;
+            position: relative;
+            z-index: 10;
         }
 
         .source-pill {
@@ -253,6 +255,7 @@
             -webkit-backdrop-filter: blur(14px);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
             transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease, border-color 180ms ease;
+            cursor: pointer;
         }
 
         .source-pill:hover {
@@ -458,18 +461,16 @@
                         </div>
 
                         <footer class="source-footer">
-                            <a class="source-pill" id="view-source-pill" href="view-source:my-digital-spaces.html"
-                                target="_blank" rel="noopener noreferrer">
+                            <a class="source-pill external-link"
+                               id="view-source-pill"
+                               href="https://github.com/aliyan212/digital-spaces"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               onclick="event.stopPropagation(); window.open('https://github.com/aliyan212/digital-spaces', '_blank'); return false;">
                                 <span class="source-pill-icon" aria-hidden="true">⌘</span>
                                 <span>View source code</span>
                             </a>
                         </footer>
-                        <script defer>
-                            const viewSourcePill = document.getElementById("view-source-pill");
-                            if (viewSourcePill) {
-                                viewSourcePill.href = `view-source:${location.href.split("#")[0]}`;
-                            }
-                        </script>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 # My Digital Spaces
 
-A curated hub of my digital presences across the web. This is a static website exported from Obsidian, serving as a personal landing page for my various online profiles and projects.
+A curated hub of my digital presences across the web. This is a static website exported from Obsidian, serving as a personal landing page for my various online profiles and projects. I created it as an experiment to see how far I could push the capabilities of Obsidian.
 
 ## Overview
 
@@ -40,35 +40,7 @@ site-lib/
     └── supported-plugins.css       # Plugin-specific styles
 ```
 
-## Features
 
-- **Graph View**: Interactive visualization of linked content
-- **Search**: Full-text search across all pages
-- **Responsive Design**: Adapts to different screen sizes
-- **Dark Theme**: Optimized for low-light viewing
-- **Sidebar Navigation**: Collapsible navigation panels
-
-## Development
-
-This is a static site with no build process required. To work with it:
-
-1. Open `index.html` in a browser
-2. For local development, serve the directory with a simple HTTP server:
-   ```bash
-   # Python 3
-   python3 -m http.server 8000
-   
-   # Node.js
-   npx serve .
-   ```
-
-## Deployment
-
-The site is designed to be deployed as static files. It can be hosted on:
-- GitHub Pages
-- Netlify
-- Vercel
-- Any static file hosting service
 
 ## Technical Notes
 
@@ -79,4 +51,4 @@ The site is designed to be deployed as static files. It can be hosted on:
 
 ## License
 
-This is a personal project. All content and design are the property of the site owner.
+This is a personal project.
