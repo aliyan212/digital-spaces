@@ -8,7 +8,7 @@
     <title>My Hub</title>
     <base href=".">
 
-    <!-- Meta & OpenGraph -->
+    
     <meta name="description" content="Notes - My Digital Spaces">
     <meta property="og:site_name" content="Notes">
     <meta property="og:type" content="website">
@@ -16,12 +16,12 @@
     <meta property="og:description" content="Notes - My Digital Spaces">
     <meta property="og:image" content="https://www.google.com/s2/favicons?domain=instagram.com&sz=256">
 
-    <!-- Favicon -->
+    
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="rss.xml">
 
-    <!-- Stylesheets -->
+    
     <link rel="stylesheet" href="styles/snippets.css">
     <link rel="stylesheet" href="styles/obsidian.css">
     <link rel="stylesheet" href="styles/theme.css">
@@ -47,12 +47,12 @@
             color: #e6edf3;
         }
 
-        /* Prevent horizontal overflow during transitions */
+        
         html, body {
             overflow-x: hidden !important;
         }
 
-        /* Base element state: hidden & shifted left */
+        
         .reveal-block {
             opacity: 0;
             transform: translate3d(-80px, 0, 0);
@@ -61,13 +61,13 @@
             will-change: opacity, transform;
         }
 
-        /* Active in-view state: fully visible & in place */
+        
         .reveal-block.is-visible {
             opacity: 1;
             transform: translate3d(0, 0, 0);
         }
 
-        /* Smooth stagger for cards inside sections */
+        
         .reveal-block .aesthetic-grid ul li {
             opacity: 0;
             transform: translate3d(-30px, 0, 0);
@@ -80,12 +80,12 @@
             transform: translate3d(0, 0, 0);
         }
 
-        /* Stagger card delays when appearing */
+        
         .reveal-block.is-visible .aesthetic-grid ul li:nth-child(1) { transition-delay: 0.1s; }
         .reveal-block.is-visible .aesthetic-grid ul li:nth-child(2) { transition-delay: 0.2s; }
         .reveal-block.is-visible .aesthetic-grid ul li:nth-child(3) { transition-delay: 0.3s; }
 
-        /* Immediate exit transition when scrolling away */
+        
         .reveal-block:not(.is-visible) .aesthetic-grid ul li {
             transition-delay: 0s;
         }
@@ -178,7 +178,7 @@
             color: #ffffff;
         }
 
-        /* --- Scroll Animation Rules --- */
+        
         .reveal-item {
             opacity: 0 !important;
             transform: translateY(35px) !important;
@@ -198,12 +198,12 @@
 
     <main class="hub-container">
 
-        <!-- Top Header -->
+        
         <header class="hub-header">
             <h1>My Digital Spaces</h1>
         </header>
 
-        <!-- Socials -->
+        
         <section class="section-block">
             <h2>🌸 Socials &amp; Inspo</h2>
             <ul>
@@ -230,7 +230,7 @@
             </ul>
         </section>
 
-        <!-- Media Logs -->
+        
         <section class="section-block">
             <h2>🍵 Media Logs</h2>
             <ul>
@@ -258,7 +258,7 @@
             </ul>
         </section>
 
-        <!-- Music -->
+        
         <section class="section-block">
             <h2>🎧 Music</h2>
             <ul>
@@ -275,7 +275,7 @@
             </ul>
         </section>
 
-        <!-- View Source Pill -->
+        
         <footer class="source-footer">
             <a class="source-pill"
                href="https://github.com/aliyan212/digital-spaces"
