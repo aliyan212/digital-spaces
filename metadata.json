@@ -1,0 +1,1076 @@
+{
+    "createdTime": 1787290865145,
+    "shownInTree": [
+        "my-digital-spaces.html"
+    ],
+    "attachments": [
+        "scripts/graph-wasm.wasm",
+        "fonts/70cc7ff27245e82ad414.ttf",
+        "fonts/454577c22304619db035.ttf",
+        "fonts/52ac8f3034507f1d9e53.ttf",
+        "fonts/05b618077343fbbd92b7.ttf",
+        "fonts/4bb6ac751d1c5478ff3a.woff2",
+        "fonts/c504db5c06caaf7cdfba.woff2",
+        "fonts/01dcbad1bac635f9c9cd.woff2",
+        "media/6155340132a851f6089e.svg",
+        "media/2308ab1944a6bfa5c5b8.svg",
+        "html/file-tree-content.html",
+        "scripts/webpage.js",
+        "scripts/graph-wasm.js",
+        "scripts/graph-render-worker.js",
+        "media/favicon.png",
+        "styles/snippets.css",
+        "styles/obsidian.css",
+        "styles/theme.css",
+        "styles/global-variable-styles.css",
+        "styles/supported-plugins.css",
+        "styles/main-styles.css",
+        "rss.xml"
+    ],
+    "allFiles": [
+        "my-digital-spaces.html",
+        "scripts/graph-wasm.wasm",
+        "fonts/70cc7ff27245e82ad414.ttf",
+        "fonts/454577c22304619db035.ttf",
+        "fonts/52ac8f3034507f1d9e53.ttf",
+        "fonts/05b618077343fbbd92b7.ttf",
+        "fonts/4bb6ac751d1c5478ff3a.woff2",
+        "fonts/c504db5c06caaf7cdfba.woff2",
+        "fonts/01dcbad1bac635f9c9cd.woff2",
+        "media/6155340132a851f6089e.svg",
+        "media/2308ab1944a6bfa5c5b8.svg",
+        "html/file-tree-content.html",
+        "scripts/webpage.js",
+        "scripts/graph-wasm.js",
+        "scripts/graph-render-worker.js",
+        "media/favicon.png",
+        "styles/snippets.css",
+        "styles/obsidian.css",
+        "styles/theme.css",
+        "styles/global-variable-styles.css",
+        "styles/supported-plugins.css",
+        "styles/main-styles.css"
+    ],
+    "webpages": {
+        "my-digital-spaces.html": {
+            "title": "My Digital Spaces",
+            "icon": "",
+            "description": "\n<img src=\"https://www.google.com/s2/favicons?domain=instagram.com&amp;sz=256\" referrerpolicy=\"no-referrer\" target=\"_self\" class=\"is-unresolved\">📸 Instagram@thestranger0708<br><a data-tooltip-position=\"top\" aria-label=\"https://www.instagram.com/thestranger0708/\" rel=\"noopener nofollow\" class=\"external-link is-unresolved\" href=\"https://www.instagram.com/thestranger0708/\" target=\"_self\">Open Profile</a>\n<br><img src=\"https://www.google.com/s2/favicons?domain=pinterest.com&amp;sz=256\" referrerpolicy=\"no-referrer\" target=\"_self\" class=\"is-unresolved\">📌 Pinterest@alieon22<br><a data-tooltip-position=\"top\" aria-label=\"https://pin.it/7tGkRDRK7\" rel=\"noopener nofollow\" class=\"external-link is-unresolved\" href=\"https://pin.it/7tGkRDRK7\" target=\"_self\">Open Profile</a>\n<br><img src=\"https://www.google.com/s2/favicons?domain=reddit.com&amp;sz=256\" referrerpolicy=\"no-referrer\" target=\"_self\" class=\"is-unresolved\">👾 Redditu/Loose-Video-5850<br><a data-tooltip-position=\"top\" aria-label=\"https://www.reddit.com/user/Loose-Video-5850/\" rel=\"noopener nofollow\" class=\"external-link is-unresolved\" href=\"https://www.reddit.com/user/Loose-Video-5850/\" target=\"_self\">Open Profile</a> <br><img src=\"https://www.google.com/s2/favicons?domain=letterboxd.com&amp;sz=256\" referrerpolicy=\"no-referrer\" target=\"_self\" class=\"is-unresolved\">🎬 Letterboxd@alieon22<br><a data-tooltip-position=\"top\" aria-label=\"https://letterboxd.com/alieon22/\" rel=\"noopener nofollow\" class=\"external-link is-unresolved\" href=\"https://letterboxd.com/alieon22/\" target=\"_self\">My Films</a>\n<br><img src=\"https://www.google.com/s2/favicons?domain=app.thestorygraph.com&amp;sz=256\" referrerpolicy=\"no-referrer\" target=\"_self\" class=\"is-unresolved\">📚 Storygraph@alieon22<br><a data-tooltip-position=\"top\" aria-label=\"https://app.thestorygraph.com/profile/alieon22\" rel=\"noopener nofollow\" class=\"external-link is-unresolved\" href=\"https://app.thestorygraph.com/profile/alieon22\" target=\"_self\">My Books</a>\n<br><img src=\"https://www.google.com/s2/favicons?domain=backloggd.com&amp;sz=256\" referrerpolicy=\"no-referrer\" target=\"_self\" class=\"is-unresolved\">🎮 Backloggd@alieon22<br><a data-tooltip-position=\"top\" aria-label=\"https://backloggd.com/u/alieon22/\" rel=\"noopener nofollow\" class=\"external-link is-unresolved\" href=\"https://backloggd.com/u/alieon22/\" target=\"_self\">My Games</a> <br><img src=\"https://cdn.simpleicons.org/lastdotfm/e31b23\" referrerpolicy=\"no-referrer\" target=\"_self\" class=\"is-unresolved\">🎵 Last.fm@alieon22<br><a data-tooltip-position=\"top\" aria-label=\"https://www.last.fm/user/alieon22\" rel=\"noopener nofollow\" class=\"external-link is-unresolved\" href=\"https://www.last.fm/user/alieon22\" target=\"_self\">My Scrobbles</a>\n",
+            "aliases": [],
+            "inlineTags": [],
+            "frontmatterTags": [],
+            "headers": [
+                {
+                    "heading": "🌸 Socials &amp; Inspo",
+                    "level": 2,
+                    "id": "🌸_Socials_&_Inspo_0"
+                },
+                {
+                    "heading": "🍵 Media Logs",
+                    "level": 2,
+                    "id": "🍵_Media_Logs_0"
+                },
+                {
+                    "heading": "🎧 Music",
+                    "level": 2,
+                    "id": "🎧_Music_0"
+                }
+            ],
+            "links": [],
+            "author": "",
+            "coverImageURL": "https://www.google.com/s2/favicons?domain=instagram.com&sz=256",
+            "fullURL": "my-digital-spaces.html",
+            "pathToRoot": ".",
+            "attachments": [],
+            "createdTime": 1787288025651,
+            "modifiedTime": 1787288040288,
+            "sourceSize": 1309,
+            "sourcePath": "My Digital Spaces.md",
+            "exportPath": "my-digital-spaces.html",
+            "showInTree": true,
+            "treeOrder": 0,
+            "backlinks": [],
+            "type": "markdown"
+        }
+    },
+    "fileInfo": {
+        "my-digital-spaces.html": {
+            "createdTime": 1787288025651,
+            "modifiedTime": 1787288040288,
+            "sourceSize": 1309,
+            "sourcePath": "My Digital Spaces.md",
+            "exportPath": "my-digital-spaces.html",
+            "showInTree": true,
+            "treeOrder": 0,
+            "backlinks": [],
+            "type": "markdown",
+            "data": null
+        },
+        "scripts/graph-wasm.wasm": {
+            "createdTime": 1787290817231,
+            "modifiedTime": 1787290812763.0066,
+            "sourceSize": 23655,
+            "sourcePath": "",
+            "exportPath": "scripts/graph-wasm.wasm",
+            "showInTree": false,
+            "treeOrder": 0,
+            "backlinks": [],
+            "type": "other",
+            "data": null
+        },
+        "fonts/70cc7ff27245e82ad414.ttf": {
+            "createdTime": 1787290865045,
+            "modifiedTime": 1787290865045,
+            "sourceSize": 192740,
+            "sourcePath": "",
+            "exportPath": "fonts/70cc7ff27245e82ad414.ttf",
+            "showInTree": false,
+            "treeOrder": 0,
+            "backlinks": [],
+            "type": "font",
+            "data": null
+        },
+        "fonts/454577c22304619db035.ttf": {
+            "createdTime": 1787290865047,
+            "modifiedTime": 1787290865047,
+            "sourceSize": 161376,
+            "sourcePath": "",
+            "exportPath": "fonts/454577c22304619db035.ttf",
+            "showInTree": false,
+            "treeOrder": 0,
+            "backlinks": [],
+            "type": "font",
+            "data": null
+        },
+        "fonts/52ac8f3034507f1d9e53.ttf": {
+            "createdTime": 1787290865049,
+            "modifiedTime": 1787290865049,
+            "sourceSize": 191568,
+            "sourcePath": "",
+            "exportPath": "fonts/52ac8f3034507f1d9e53.ttf",
+            "showInTree": false,
+            "treeOrder": 0,
+            "backlinks": [],
+            "type": "font",
+            "data": null
+        },
+        "fonts/05b618077343fbbd92b7.ttf": {
+            "createdTime": 1787290865050,
+            "modifiedTime": 1787290865050,
+            "sourceSize": 155288,
+            "sourcePath": "",
+            "exportPath": "fonts/05b618077343fbbd92b7.ttf",
+            "showInTree": false,
+            "treeOrder": 0,
+            "backlinks": [],
+            "type": "font",
+            "data": null
+        },
+        "fonts/4bb6ac751d1c5478ff3a.woff2": {
+            "createdTime": 1787290865037,
+            "modifiedTime": 1787290865037,
+            "sourceSize": 7876,
+            "sourcePath": "",
+            "exportPath": "fonts/4bb6ac751d1c5478ff3a.woff2",
+            "showInTree": false,
+            "treeOrder": 0,
+            "backlinks": [],
+            "type": "font",
+            "data": null
+        },
+        "fonts/c504db5c06caaf7cdfba.woff2": {
+            "createdTime": 1787290865054,
+            "modifiedTime": 1787290865055,
+            "sourceSize": 352240,
+            "sourcePath": "",
+            "exportPath": "fonts/c504db5c06caaf7cdfba.woff2",
+            "showInTree": false,
+            "treeOrder": 0,
+            "backlinks": [],
+            "type": "font",
+            "data": null
+        },
+        "fonts/01dcbad1bac635f9c9cd.woff2": {
+            "createdTime": 1787290865043,
+            "modifiedTime": 1787290865043,
+            "sourceSize": 387976,
+            "sourcePath": "",
+            "exportPath": "fonts/01dcbad1bac635f9c9cd.woff2",
+            "showInTree": false,
+            "treeOrder": 0,
+            "backlinks": [],
+            "type": "font",
+            "data": null
+        },
+        "media/6155340132a851f6089e.svg": {
+            "createdTime": 1787290865039,
+            "modifiedTime": 1787290865039,
+            "sourceSize": 315,
+            "sourcePath": "",
+            "exportPath": "media/6155340132a851f6089e.svg",
+            "showInTree": false,
+            "treeOrder": 0,
+            "backlinks": [],
+            "type": "media",
+            "data": null
+        },
+        "media/2308ab1944a6bfa5c5b8.svg": {
+            "createdTime": 1787290865040,
+            "modifiedTime": 1787290865040,
+            "sourceSize": 278,
+            "sourcePath": "",
+            "exportPath": "media/2308ab1944a6bfa5c5b8.svg",
+            "showInTree": false,
+            "treeOrder": 0,
+            "backlinks": [],
+            "type": "media",
+            "data": null
+        },
+        "html/file-tree-content.html": {
+            "createdTime": 1787290865220,
+            "modifiedTime": 1787290865220,
+            "sourceSize": 746,
+            "sourcePath": "",
+            "exportPath": "html/file-tree-content.html",
+            "showInTree": false,
+            "treeOrder": 0,
+            "backlinks": [],
+            "type": "html",
+            "data": null
+        },
+        "scripts/webpage.js": {
+            "createdTime": 1787290818000,
+            "modifiedTime": 1787290818000,
+            "sourceSize": 110729,
+            "sourcePath": "",
+            "exportPath": "scripts/webpage.js",
+            "showInTree": false,
+            "treeOrder": 0,
+            "backlinks": [],
+            "type": "script",
+            "data": null
+        },
+        "scripts/graph-wasm.js": {
+            "createdTime": 1787290818000,
+            "modifiedTime": 1787290818000,
+            "sourceSize": 12885,
+            "sourcePath": "",
+            "exportPath": "scripts/graph-wasm.js",
+            "showInTree": false,
+            "treeOrder": 0,
+            "backlinks": [],
+            "type": "script",
+            "data": null
+        },
+        "scripts/graph-render-worker.js": {
+            "createdTime": 1787290818000,
+            "modifiedTime": 1787290818000,
+            "sourceSize": 5681,
+            "sourcePath": "",
+            "exportPath": "scripts/graph-render-worker.js",
+            "showInTree": false,
+            "treeOrder": 0,
+            "backlinks": [],
+            "type": "script",
+            "data": null
+        },
+        "media/favicon.png": {
+            "createdTime": 1787290864915,
+            "modifiedTime": 1787290864915,
+            "sourceSize": 1105,
+            "sourcePath": "",
+            "exportPath": "media/favicon.png",
+            "showInTree": false,
+            "treeOrder": 0,
+            "backlinks": [],
+            "type": "media",
+            "data": null
+        },
+        "styles/snippets.css": {
+            "createdTime": 1787290865031,
+            "modifiedTime": 1787290865031,
+            "sourceSize": 3110,
+            "sourcePath": "",
+            "exportPath": "styles/snippets.css",
+            "showInTree": false,
+            "treeOrder": 0,
+            "backlinks": [],
+            "type": "style",
+            "data": null
+        },
+        "styles/obsidian.css": {
+            "createdTime": 1787290865144,
+            "modifiedTime": 1787290865144,
+            "sourceSize": 222233,
+            "sourcePath": "",
+            "exportPath": "styles/obsidian.css",
+            "showInTree": false,
+            "treeOrder": 0,
+            "backlinks": [],
+            "type": "style",
+            "data": null
+        },
+        "styles/theme.css": {
+            "createdTime": 1787290818105,
+            "modifiedTime": 1787290818105,
+            "sourceSize": 63710,
+            "sourcePath": "",
+            "exportPath": "styles/theme.css",
+            "showInTree": false,
+            "treeOrder": 0,
+            "backlinks": [],
+            "type": "style",
+            "data": null
+        },
+        "styles/global-variable-styles.css": {
+            "createdTime": 1787290865010,
+            "modifiedTime": 1787290865010,
+            "sourceSize": 305,
+            "sourcePath": "",
+            "exportPath": "styles/global-variable-styles.css",
+            "showInTree": false,
+            "treeOrder": 0,
+            "backlinks": [],
+            "type": "style",
+            "data": null
+        },
+        "styles/supported-plugins.css": {
+            "createdTime": 1787290865034,
+            "modifiedTime": 1787290865034,
+            "sourceSize": 1824,
+            "sourcePath": "",
+            "exportPath": "styles/supported-plugins.css",
+            "showInTree": false,
+            "treeOrder": 0,
+            "backlinks": [],
+            "type": "style",
+            "data": null
+        },
+        "styles/main-styles.css": {
+            "createdTime": 1787290818031,
+            "modifiedTime": 1787290818031,
+            "sourceSize": 19521,
+            "sourcePath": "",
+            "exportPath": "styles/main-styles.css",
+            "showInTree": false,
+            "treeOrder": 0,
+            "backlinks": [],
+            "type": "style",
+            "data": null
+        },
+        "rss.xml": {
+            "createdTime": 1787290865737,
+            "modifiedTime": 1787290865737,
+            "sourceSize": 3948,
+            "sourcePath": "",
+            "exportPath": "rss.xml",
+            "showInTree": false,
+            "treeOrder": 0,
+            "backlinks": [],
+            "type": "other",
+            "data": null
+        }
+    },
+    "sourceToTarget": {
+        "My Digital Spaces.md": "my-digital-spaces.html",
+        "": "rss.xml"
+    },
+    "featureOptions": {
+        "backlinks": {
+            "featureId": "backlinks",
+            "enabled": true,
+            "unavailable": false,
+            "alwaysEnabled": false,
+            "hideSettingsButton": false,
+            "featurePlacement": {
+                "selector": ".footer",
+                "type": "start",
+                "info_selector": {
+                    "show": true,
+                    "name": "",
+                    "description": "CSS selector for an element. The feature will be placed relative to this element.",
+                    "placeholder": ""
+                },
+                "info_type": {
+                    "show": true,
+                    "name": "",
+                    "description": "Will this feature be placed before, after, or inside (at the beggining or end).",
+                    "placeholder": "",
+                    "dropdownOptions": {
+                        "Before": "before",
+                        "After": "after",
+                        "Start": "start",
+                        "End": "end"
+                    }
+                }
+            },
+            "info_featurePlacement": {
+                "show": true,
+                "name": "",
+                "description": "Where to place this feature on the page. (Relative to the selector)",
+                "placeholder": ""
+            },
+            "displayTitle": "Backlinks",
+            "info_displayTitle": {
+                "show": true,
+                "name": "",
+                "description": "Descriptive title to show above the feature",
+                "placeholder": ""
+            }
+        },
+        "tags": {
+            "featureId": "tags",
+            "enabled": true,
+            "unavailable": false,
+            "alwaysEnabled": false,
+            "hideSettingsButton": false,
+            "featurePlacement": {
+                "selector": ".header .data-bar",
+                "type": "end",
+                "info_selector": {
+                    "show": true,
+                    "name": "",
+                    "description": "CSS selector for an element. The feature will be placed relative to this element.",
+                    "placeholder": ""
+                },
+                "info_type": {
+                    "show": true,
+                    "name": "",
+                    "description": "Will this feature be placed before, after, or inside (at the beggining or end).",
+                    "placeholder": "",
+                    "dropdownOptions": {
+                        "Before": "before",
+                        "After": "after",
+                        "Start": "start",
+                        "End": "end"
+                    }
+                }
+            },
+            "info_featurePlacement": {
+                "show": true,
+                "name": "",
+                "description": "Where to place this feature on the page. (Relative to the selector)",
+                "placeholder": ""
+            },
+            "displayTitle": "",
+            "info_displayTitle": {
+                "show": true,
+                "name": "",
+                "description": "Descriptive title to show above the feature",
+                "placeholder": ""
+            },
+            "showInlineTags": true,
+            "showFrontmatterTags": true,
+            "info_showInlineTags": {
+                "show": true,
+                "name": "",
+                "description": "Show tags defined inside the document at the top of the page.",
+                "placeholder": ""
+            },
+            "info_showFrontmatterTags": {
+                "show": true,
+                "name": "",
+                "description": "Show tags defined in the frontmatter of the document at the top of the page.",
+                "placeholder": ""
+            }
+        },
+        "alias": {
+            "featureId": "aliases",
+            "enabled": true,
+            "unavailable": false,
+            "alwaysEnabled": false,
+            "hideSettingsButton": false,
+            "featurePlacement": {
+                "selector": ".header .data-bar",
+                "type": "start",
+                "info_selector": {
+                    "show": true,
+                    "name": "",
+                    "description": "CSS selector for an element. The feature will be placed relative to this element.",
+                    "placeholder": ""
+                },
+                "info_type": {
+                    "show": true,
+                    "name": "",
+                    "description": "Will this feature be placed before, after, or inside (at the beggining or end).",
+                    "placeholder": "",
+                    "dropdownOptions": {
+                        "Before": "before",
+                        "After": "after",
+                        "Start": "start",
+                        "End": "end"
+                    }
+                }
+            },
+            "info_featurePlacement": {
+                "show": true,
+                "name": "",
+                "description": "Where to place this feature on the page. (Relative to the selector)",
+                "placeholder": ""
+            },
+            "displayTitle": "Aliases",
+            "info_displayTitle": {
+                "show": true,
+                "name": "",
+                "description": "Descriptive title to show above the feature",
+                "placeholder": ""
+            }
+        },
+        "properties": {
+            "featureId": "properties",
+            "enabled": true,
+            "unavailable": false,
+            "alwaysEnabled": false,
+            "hideSettingsButton": false,
+            "featurePlacement": {
+                "selector": ".header",
+                "type": "start",
+                "info_selector": {
+                    "show": true,
+                    "name": "",
+                    "description": "CSS selector for an element. The feature will be placed relative to this element.",
+                    "placeholder": ""
+                },
+                "info_type": {
+                    "show": true,
+                    "name": "",
+                    "description": "Will this feature be placed before, after, or inside (at the beggining or end).",
+                    "placeholder": "",
+                    "dropdownOptions": {
+                        "Before": "before",
+                        "After": "after",
+                        "Start": "start",
+                        "End": "end"
+                    }
+                }
+            },
+            "info_featurePlacement": {
+                "show": true,
+                "name": "",
+                "description": "Where to place this feature on the page. (Relative to the selector)",
+                "placeholder": ""
+            },
+            "displayTitle": "Properties",
+            "info_displayTitle": {
+                "show": true,
+                "name": "",
+                "description": "Descriptive title to show above the feature",
+                "placeholder": ""
+            },
+            "info_hideProperties": {
+                "show": true,
+                "name": "",
+                "description": "A list of properties to hide from the properties view",
+                "placeholder": ""
+            }
+        },
+        "fileNavigation": {
+            "featureId": "file-navigation",
+            "enabled": true,
+            "unavailable": false,
+            "alwaysEnabled": false,
+            "hideSettingsButton": false,
+            "featurePlacement": {
+                "selector": "#left-sidebar-content",
+                "type": "end",
+                "info_selector": {
+                    "show": true,
+                    "name": "",
+                    "description": "CSS selector for an element. The feature will be placed relative to this element.",
+                    "placeholder": ""
+                },
+                "info_type": {
+                    "show": true,
+                    "name": "",
+                    "description": "Will this feature be placed before, after, or inside (at the beggining or end).",
+                    "placeholder": "",
+                    "dropdownOptions": {
+                        "Before": "before",
+                        "After": "after",
+                        "Start": "start",
+                        "End": "end"
+                    }
+                }
+            },
+            "info_featurePlacement": {
+                "show": true,
+                "name": "",
+                "description": "Where to place this feature on the page. (Relative to the selector)",
+                "placeholder": ""
+            },
+            "info_includePath": {
+                "show": false,
+                "name": "",
+                "description": "",
+                "placeholder": ""
+            },
+            "showCustomIcons": false,
+            "showDefaultFolderIcons": false,
+            "showDefaultFileIcons": false,
+            "defaultFolderIcon": "lucide//folder",
+            "defaultFileIcon": "lucide//file",
+            "defaultMediaIcon": "lucide//file-image",
+            "exposeStartingPath": true,
+            "info_showCustomIcons": {
+                "show": true,
+                "name": "",
+                "description": "Show custom icons for files and folders",
+                "placeholder": ""
+            },
+            "info_showDefaultFolderIcons": {
+                "show": true,
+                "name": "",
+                "description": "Show a default icon of a folder for every folder in the tree",
+                "placeholder": ""
+            },
+            "info_showDefaultFileIcons": {
+                "show": true,
+                "name": "",
+                "description": "Show a default icon of a file for every file in the tree",
+                "placeholder": ""
+            },
+            "info_defaultFolderIcon": {
+                "show": true,
+                "name": "",
+                "description": "The icon to use for folders. Prefix with 'lucide//' to use a Lucide icon",
+                "placeholder": ""
+            },
+            "info_defaultFileIcon": {
+                "show": true,
+                "name": "",
+                "description": "The icon to use for files. Prefix with 'lucide//' to use a Lucide icon",
+                "placeholder": ""
+            },
+            "info_defaultMediaIcon": {
+                "show": true,
+                "name": "",
+                "description": "The icon to use for media files. Prefix with 'lucide//' to use a Lucide icon",
+                "placeholder": ""
+            },
+            "info_exposeStartingPath": {
+                "show": true,
+                "name": "",
+                "description": "Whether or not to show the current file in the file tree when the page is first loaded",
+                "placeholder": ""
+            },
+            "includePath": "html/file-tree.html"
+        },
+        "search": {
+            "featureId": "search",
+            "enabled": true,
+            "unavailable": false,
+            "alwaysEnabled": false,
+            "hideSettingsButton": false,
+            "featurePlacement": {
+                "selector": "#left-sidebar .topbar-content",
+                "type": "start",
+                "info_selector": {
+                    "show": true,
+                    "name": "",
+                    "description": "CSS selector for an element. The feature will be placed relative to this element.",
+                    "placeholder": ""
+                },
+                "info_type": {
+                    "show": true,
+                    "name": "",
+                    "description": "Will this feature be placed before, after, or inside (at the beggining or end).",
+                    "placeholder": "",
+                    "dropdownOptions": {
+                        "Before": "before",
+                        "After": "after",
+                        "Start": "start",
+                        "End": "end"
+                    }
+                }
+            },
+            "info_featurePlacement": {
+                "show": true,
+                "name": "",
+                "description": "Where to place this feature on the page. (Relative to the selector)",
+                "placeholder": ""
+            },
+            "displayTitle": "Search...",
+            "info_displayTitle": {
+                "show": true,
+                "name": "",
+                "description": "Descriptive title to show above the feature",
+                "placeholder": ""
+            }
+        },
+        "outline": {
+            "featureId": "outline",
+            "enabled": true,
+            "unavailable": false,
+            "alwaysEnabled": false,
+            "hideSettingsButton": false,
+            "featurePlacement": {
+                "selector": "#right-sidebar-content",
+                "type": "end",
+                "info_selector": {
+                    "show": true,
+                    "name": "",
+                    "description": "CSS selector for an element. The feature will be placed relative to this element.",
+                    "placeholder": ""
+                },
+                "info_type": {
+                    "show": true,
+                    "name": "",
+                    "description": "Will this feature be placed before, after, or inside (at the beggining or end).",
+                    "placeholder": "",
+                    "dropdownOptions": {
+                        "Before": "before",
+                        "After": "after",
+                        "Start": "start",
+                        "End": "end"
+                    }
+                }
+            },
+            "info_featurePlacement": {
+                "show": true,
+                "name": "",
+                "description": "Where to place this feature on the page. (Relative to the selector)",
+                "placeholder": ""
+            },
+            "displayTitle": "Outline",
+            "info_displayTitle": {
+                "show": true,
+                "name": "",
+                "description": "Descriptive title to show above the feature",
+                "placeholder": ""
+            },
+            "startCollapsed": false,
+            "minCollapseDepth": 0,
+            "info_startCollapsed": {
+                "show": true,
+                "name": "",
+                "description": "Should the outline start collapsed?",
+                "placeholder": ""
+            },
+            "info_minCollapseDepth": {
+                "show": true,
+                "name": "",
+                "description": "Only allow outline items to be collapsed if they are at least this many levels deep in the tree.",
+                "placeholder": "",
+                "dropdownOptions": {
+                    "1": 1,
+                    "2": 2,
+                    "No Collapse": 100
+                }
+            }
+        },
+        "themeToggle": {
+            "featureId": "theme-toggle",
+            "enabled": true,
+            "unavailable": false,
+            "alwaysEnabled": false,
+            "hideSettingsButton": false,
+            "featurePlacement": {
+                "selector": "#right-sidebar .topbar-content",
+                "type": "start",
+                "info_selector": {
+                    "show": true,
+                    "name": "",
+                    "description": "CSS selector for an element. The feature will be placed relative to this element.",
+                    "placeholder": ""
+                },
+                "info_type": {
+                    "show": true,
+                    "name": "",
+                    "description": "Will this feature be placed before, after, or inside (at the beggining or end).",
+                    "placeholder": "",
+                    "dropdownOptions": {
+                        "Before": "before",
+                        "After": "after",
+                        "Start": "start",
+                        "End": "end"
+                    }
+                }
+            },
+            "info_featurePlacement": {
+                "show": true,
+                "name": "",
+                "description": "Where to place this feature on the page. (Relative to the selector)",
+                "placeholder": ""
+            },
+            "displayTitle": "",
+            "info_displayTitle": {
+                "show": true,
+                "name": "",
+                "description": "Descriptive title to show above the feature",
+                "placeholder": ""
+            }
+        },
+        "graphView": {
+            "featureId": "graph-view",
+            "enabled": true,
+            "unavailable": false,
+            "alwaysEnabled": false,
+            "hideSettingsButton": false,
+            "featurePlacement": {
+                "selector": "#right-sidebar-content",
+                "type": "start",
+                "info_selector": {
+                    "show": true,
+                    "name": "",
+                    "description": "CSS selector for an element. The feature will be placed relative to this element.",
+                    "placeholder": ""
+                },
+                "info_type": {
+                    "show": true,
+                    "name": "",
+                    "description": "Will this feature be placed before, after, or inside (at the beggining or end).",
+                    "placeholder": "",
+                    "dropdownOptions": {
+                        "Before": "before",
+                        "After": "after",
+                        "Start": "start",
+                        "End": "end"
+                    }
+                }
+            },
+            "info_featurePlacement": {
+                "show": true,
+                "name": "",
+                "description": "Where to place this feature on the page. (Relative to the selector)",
+                "placeholder": ""
+            },
+            "displayTitle": "Graph View",
+            "info_displayTitle": {
+                "show": true,
+                "name": "",
+                "description": "Descriptive title to show above the feature",
+                "placeholder": ""
+            },
+            "showOrphanNodes": true,
+            "showAttachments": false,
+            "allowGlobalGraph": true,
+            "allowExpand": true,
+            "attractionForce": 1,
+            "linkLength": 15,
+            "repulsionForce": 80,
+            "centralForce": 2,
+            "edgePruning": 100,
+            "minNodeRadius": 3,
+            "maxNodeRadius": 7,
+            "info_showOrphanNodes": {
+                "show": true,
+                "name": "",
+                "description": "Show nodes that are not connected to any other nodes.",
+                "placeholder": ""
+            },
+            "info_showAttachments": {
+                "show": true,
+                "name": "",
+                "description": "Show attachments like images and PDFs as nodes in the graph.",
+                "placeholder": ""
+            },
+            "info_allowGlobalGraph": {
+                "show": true,
+                "name": "",
+                "description": "Allow the user to view the global graph of all nodes.",
+                "placeholder": ""
+            },
+            "info_allowExpand": {
+                "show": true,
+                "name": "",
+                "description": "Allow the user to pop-out the graph view to take up the whole screen",
+                "placeholder": ""
+            },
+            "info_attractionForce": {
+                "show": true,
+                "name": "",
+                "description": "How much should linked nodes attract each other? This will make the graph appear more clustered.",
+                "placeholder": ""
+            },
+            "info_linkLength": {
+                "show": true,
+                "name": "",
+                "description": "How long should the links between nodes be? The shorter the links the more connected nodes will cluster together.",
+                "placeholder": ""
+            },
+            "info_repulsionForce": {
+                "show": true,
+                "name": "",
+                "description": "How much should nodes repel each other? This will make disconnected parts more spread out.",
+                "placeholder": ""
+            },
+            "info_centralForce": {
+                "show": true,
+                "name": "",
+                "description": "How much should nodes be attracted to the center? This will make the graph appear more dense and circular.",
+                "placeholder": ""
+            },
+            "info_edgePruning": {
+                "show": true,
+                "name": "",
+                "description": "Edges with a length above this threshold will not be rendered, however they will still contribute to the simulation. This can help large tangled graphs look more organised. Hovering over a node will still display these links.",
+                "placeholder": ""
+            },
+            "info_minNodeRadius": {
+                "show": true,
+                "name": "",
+                "description": "How small should the smallest nodes be? The smaller a node is the less it will attract other nodes.",
+                "placeholder": ""
+            },
+            "info_maxNodeRadius": {
+                "show": true,
+                "name": "",
+                "description": "How large should the largest nodes be? Nodes are sized by how many links they have. The larger a node is the more it will attract other nodes. This can be used to create a good grouping around the most important nodes.",
+                "placeholder": ""
+            }
+        },
+        "sidebar": {
+            "featureId": "sidebar",
+            "enabled": true,
+            "unavailable": false,
+            "alwaysEnabled": false,
+            "hideSettingsButton": false,
+            "allowResizing": true,
+            "allowCollapsing": true,
+            "rightDefaultWidth": "20em",
+            "leftDefaultWidth": "20em",
+            "info_allowResizing": {
+                "show": true,
+                "name": "",
+                "description": "Whether or not to allow the sidebars to be resized",
+                "placeholder": ""
+            },
+            "info_allowCollapsing": {
+                "show": true,
+                "name": "",
+                "description": "Whether or not to allow the sidebars to be collapsed",
+                "placeholder": ""
+            },
+            "info_rightDefaultWidth": {
+                "show": true,
+                "name": "",
+                "description": "The default width of the right sidebar",
+                "placeholder": ""
+            },
+            "info_leftDefaultWidth": {
+                "show": true,
+                "name": "",
+                "description": "The default width of the left sidebar",
+                "placeholder": ""
+            }
+        },
+        "customHead": {
+            "featureId": "custom-head",
+            "enabled": true,
+            "unavailable": false,
+            "alwaysEnabled": false,
+            "hideSettingsButton": false,
+            "featurePlacement": {
+                "selector": "head",
+                "type": "end",
+                "info_selector": {
+                    "show": true,
+                    "name": "",
+                    "description": "CSS selector for an element. The feature will be placed relative to this element.",
+                    "placeholder": ""
+                },
+                "info_type": {
+                    "show": true,
+                    "name": "",
+                    "description": "Will this feature be placed before, after, or inside (at the beggining or end).",
+                    "placeholder": "",
+                    "dropdownOptions": {
+                        "Before": "before",
+                        "After": "after",
+                        "Start": "start",
+                        "End": "end"
+                    }
+                }
+            },
+            "info_featurePlacement": {
+                "show": true,
+                "name": "",
+                "description": "Where to place this feature on the page. (Relative to the selector)",
+                "placeholder": ""
+            },
+            "info_includePath": {
+                "show": false,
+                "name": "",
+                "description": "",
+                "placeholder": ""
+            },
+            "sourcePath": "",
+            "info_sourcePath": {
+                "show": true,
+                "name": "",
+                "description": "The local path to the source .html file which will be included.",
+                "placeholder": "",
+                "fileInputOptions": {
+                    "makeRelativeToVault": true,
+                    "browseButton": true
+                }
+            },
+            "includePath": "html/custom-head.html"
+        },
+        "document": {
+            "featureId": "obsidian-document",
+            "enabled": true,
+            "unavailable": false,
+            "alwaysEnabled": true,
+            "hideSettingsButton": false,
+            "allowFoldingLists": true,
+            "allowFoldingHeadings": true,
+            "documentWidth": "40em",
+            "info_allowFoldingLists": {
+                "show": true,
+                "name": "",
+                "description": "Whether or not to allow lists to be folded",
+                "placeholder": ""
+            },
+            "info_allowFoldingHeadings": {
+                "show": true,
+                "name": "",
+                "description": "Whether or not to allow headings to be folded",
+                "placeholder": ""
+            },
+            "info_documentWidth": {
+                "show": true,
+                "name": "",
+                "description": "The width of the document",
+                "placeholder": ""
+            }
+        },
+        "rss": {
+            "featureId": "rss",
+            "enabled": true,
+            "unavailable": false,
+            "alwaysEnabled": false,
+            "hideSettingsButton": false,
+            "siteUrl": "",
+            "authorName": "",
+            "info_siteUrl": {
+                "show": true,
+                "name": "",
+                "description": "The url that this site will be hosted at",
+                "placeholder": "https://example.com/mysite"
+            },
+            "info_authorName": {
+                "show": true,
+                "name": "",
+                "description": "The name of the author of the site",
+                "placeholder": ""
+            }
+        },
+        "linkPreview": {
+            "featureId": "link-preview",
+            "enabled": true,
+            "unavailable": false,
+            "alwaysEnabled": false,
+            "hideSettingsButton": true
+        }
+    },
+    "modifiedTime": 1787290865145,
+    "siteName": "Notes",
+    "vaultName": "Notes",
+    "exportRoot": "",
+    "baseURL": "",
+    "pluginVersion": "1.9.2",
+    "themeName": "",
+    "bodyClasses": "publish css-settings-manager is-hidden-frameless show-inline-title is-floating-nav show-ribbon is-focused",
+    "hasFavicon": false
+}
