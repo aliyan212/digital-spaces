@@ -47,7 +47,6 @@ site-lib/
 - Built with Obsidian's static site export feature
 - Uses WebAssembly for graph rendering
 - Includes custom font assets for consistent typography
-- RSS feed enabled for content syndication
 
 ## License
 
